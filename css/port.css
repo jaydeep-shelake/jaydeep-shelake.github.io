@@ -1134,7 +1134,6 @@ h2{
 }
 .use.hide .i-use #head , .certi.hide .head h2 , .tools.hide .tool-text h2 , .project.hide .heading h2{
     background: -webkit-linear-gradient(#00ff00,#ad0da0);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

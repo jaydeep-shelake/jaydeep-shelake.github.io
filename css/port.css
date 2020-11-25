@@ -1136,6 +1136,7 @@ h2{
     background: -webkit-linear-gradient(#00ff00,#ad0da0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .use.hide .i-use .line, .certi.hide .head .line , .tools.hide .tool-text .line ,.project.hide .heading .line {

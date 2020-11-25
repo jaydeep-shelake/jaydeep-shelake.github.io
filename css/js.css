@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Orbitron',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+h1 span{
+    color: rgb(255, 225, 0);
+}
+.cards{
+    width: 100%;
+    padding: 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    transition: height 0.3s linear;
+}
+.cards .card{
+    width: 280px;
+    height: 280px;
+    background: #fff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.345);
+    margin: 0 20px;
+    padding: 0.8rem 0;
+}
+.card .img{
+    width: 100%;
+    height: 60%;
+}
+.card .text{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dis{
+    font-size: 18px;
+    padding: 0.6rem 0;
+    color: rgb(70, 70, 70);
+    align-self: flex-start;
+    padding-left: 15%;
+}
+.dis p:last-child{
+    font-size: 13px;
+    color: gray;
+    padding: 0.3rem 0;
+}
+.btns{
+    padding: 0.8rem 0;
+}
+.btn{
+    width: auto;
+    padding: 0.6rem 0.8rem;
+    background: rgb(255, 225, 0);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(225, 225, 0, 0.446);
+    margin: 0 10px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+.btn.red{
+    background: rgb(240, 36, 36);
+    box-shadow: 2px 2px 10px rgba(240, 36, 36,0.556);
+    cursor: pointer;
+}
+.btn.red:hover,.btn.red:focus{
+    color: rgb(240, 36, 36);
+}
+
+.btn:hover ,.btn:focus{
+    background: #fff;
+    color: rgb(255, 225, 0);
+}
+#cards{
+    min-height: auto;
+
+}
+.cards.hide{
+    opacity: 0;
+    max-height: 0;
+    min-height: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+@media(max-width:360px){
+    .cards .card{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    .cards{
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+}

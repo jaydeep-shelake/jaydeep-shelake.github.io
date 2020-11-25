@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaydeep Shelake WebDeveloper</title>
+    <link rel="stylesheet" href="../css/js.css">
+</head>
+<body>
+    <h1><span>JavaScript</span> Projects</h1>
+    <div class="cards">
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>Pokedex</p>
+                    <p>pokemon application</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                   <p>TypeBeater</p>
+                   <p>Speed typing game</p>
+                </div>
+            <div class="btns">
+                <a href="" class="btn">View</a>
+                <a href="" class="btn">View code</a>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>Netflix UI</p>
+                    <p>Netflix landing page</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>Cart.js</p>
+                    <p>Shoping cart website</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                   <p>FlipCard</p>
+                   <p>Memory fliping card game</p>
+                </div>
+            <div class="btns">
+                <a href="" class="btn">View</a>
+                <a href="" class="btn">View code</a>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>Tic Tac Toe</p>
+                    <p>Tic Tac Toe game</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cards hide" id="cards">
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>Quizz.js</p>
+                    <p>Mulltiple choise question game</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                   <p>Password Genrator</p>
+                   <p>Secure 2FA Password Genrator</p>
+                </div>
+            <div class="btns">
+                <a href="" class="btn">View</a>
+                <a href="" class="btn">View code</a>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+
+            </div>
+            <div class="text">
+                <div class="dis">
+                    <p>RockPaperSecissors</p>
+                    <p>rock paper seccisors game</p>
+                 </div>
+             <div class="btns">
+                 <a href="" class="btn">View</a>
+                 <a href="" class="btn">View code</a>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <a  class="btn red">View All</a>
+    <script>
+        const allBtn = document.querySelector('.red');
+        const cards = document.getElementById('cards');
+        allBtn.addEventListener('click',()=>{
+           cards.classList.toggle('hide')
+           if(allBtn.innerText==='View All'){
+               allBtn.innerText='View Less'
+           }
+           else{
+            allBtn.innerText='View All'
+           }
+        });
+    </script>
+</body>
+</html>

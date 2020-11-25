@@ -248,14 +248,14 @@ color: #7e7d7d;
     overflow: hidden;
 }
 .box-1{
-    background-image: url(../img/services-1.png);
+    background-image: url(./img/services-1.png);
     
 }
 .box-2{
-    background-image: url(../img/services-2.png);
+    background-image: url(./img/services-2.png);
 }
 .box-3{
-    background-image: url(../img/services-3.png);
+    background-image: url(./img/services-3.png);
 }
 .box-1 span,.box-2 span,.box-3 span{
     width: 40px;
@@ -303,7 +303,7 @@ line-height: 0px;
 .contact{
     width: 100%;
     height: 280px;
-    background-image: url(../img/project.png);
+    background-image: url(./img/project.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

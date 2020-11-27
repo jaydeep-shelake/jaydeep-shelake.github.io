@@ -1,4 +1,4 @@
-const contactBtn = document.getElementById('contactBtn');
+const contactBtn = document.querySelectorAll('.contactBtn');
 const sumbmitBtn = document.getElementById('sumbmitBtn');
 let innerForm = document.getElementById('subForm');
 const navbar = document.getElementById('navbar');
@@ -6,11 +6,19 @@ const burger = document.getElementById('burger');
 const cross = document.getElementById('cross');
 const ball = document.getElementById('ball');
 const label = document.querySelector('.label');
-
+const formArea = document.querySelector('.form-area');
+const formCross= document.getElementById('from-cross');
+const name1 = document.getElementById('name');
+const modalArea = document.querySelector('.modal-area');
+const nameValue = document.getElementById('name-value');
+const email = document.getElementById('email');
 //event listerner for contact button
-contactBtn.addEventListener('click',formSub)
+contactBtn.forEach((contact)=>{
+    contact.addEventListener('click',formSub)
+});
 
-sumbmitBtn.addEventListener('click',Submit);
+
+
 
 burger.addEventListener('click',menu);
 
@@ -19,20 +27,20 @@ cross.addEventListener('click',up);
 innerForm.style.top='-300px';
 
 function formSub(e){
-    e.preventDefault()
-    console.log('clicked');
-    if(innerForm.style.top=='-300px'){
-        innerForm.style.top="4%";
-    }
-    else{
-        innerForm.style.top="-300px"
-    }
+    
+   formArea.style.top="10%"; 
 }
 
-//function for moving form to -300 up
-function Submit(){
-    innerForm.style.top='-300px'
-}
+sumbmitBtn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    name1.innerHTML=`<b>${nameValue.value}</b>`;
+  modalArea.style.top="10%";
+   nameValue.value="";
+   email.value="";
+ formArea.style.top="-390px";
+ setTimeout(()=>{modalArea.style.top="-80px"},1600)
+});
+
 
 
 // function to come down 25vh
@@ -129,11 +137,16 @@ navList.addEventListener('click',()=>{
  const body = document.querySelector('.body');
 
  
-ball.addEventListener('click',()=>{
+label.addEventListener('click',()=>{
     blackColor.forEach((balckbg)=>{
            balckbg.classList.toggle('hide');
      });
 body.classList.toggle('body-color') ;
 label.classList.toggle('color-white')
 
+});
+
+//from 
+formCross.addEventListener('click',()=>{
+  formArea.style.top="-390px";
 });

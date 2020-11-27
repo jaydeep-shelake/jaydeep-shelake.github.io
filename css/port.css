@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 body{
     background-color: #f6f5f5;
     margin: 0px;
@@ -63,10 +65,10 @@ nav ul li a:hover{
     color: #2d2a2a;
 }
 .text-container p:nth-child(1){
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
     font-weight: bold;
     color: #6d6d6d;
-    font-size: 20px;
+    font-size: 26px;
 }
 .text-container p:nth-child(2){
     font-family: 'Orbitron', sans-serif;
@@ -676,6 +678,7 @@ nav ul i{
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 5%;
+    overflow-x: hidden;
     
 }
 .project-sec{
@@ -1134,7 +1137,9 @@ h2{
 }
 .use.hide .i-use #head , .certi.hide .head h2 , .tools.hide .tool-text h2 , .project.hide .heading h2{
     background: -webkit-linear-gradient(#00ff00,#ad0da0);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .use.hide .i-use .line, .certi.hide .head .line , .tools.hide .tool-text .line ,.project.hide .heading .line {

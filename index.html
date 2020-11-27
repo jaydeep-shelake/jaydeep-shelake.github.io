@@ -8,6 +8,7 @@
     
     <title>Jaydeep Shelake WebDeveloper</title>
     <link rel="stylesheet" href="./css/port.css">
+    <link rel="stylesheet" href="./css/form.css">
     <!-- <link rel="stylesheet" href="portfrom.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -63,7 +64,7 @@
            <p>Web Developer</p>
            <p>Hello!, I'm Jaydeep Hindurao Shelake I'm web devloper ans also a Mechanical Engineer.if you have any projects of web desgining for your buissness please contact me.You will love my work and not be disponted at any moment </p>
            <button >Download Cv</button>
-           <button id="contactBtn">Contact</button>
+           <button id="contactBtn" class="contactBtn">Contact</button>
        </div>
     </div>
     <div class="services black" >
@@ -256,7 +257,7 @@
         <h2 style="margin-left: 1%;">Projects</h2>
     </div>
     <div class="project-sec">
-     <a href="./html/jsproject.html" class="card black"> 
+     <a href="./html/jsproject.html" class="card black" data-aos="fade-right"> 
          <div class="img">
           <img src="./img/js.jpg" alt="">
          </div>
@@ -264,7 +265,7 @@
           Javascript Projects
          </div>
 </a>
-     <a href="./html/" class="card "> 
+     <a href="./html/nodeproject.html" class="card " data-aos="fade-left"> 
          <div class="img">
           <img src="./img/node.png" alt="">
          </div>
@@ -279,7 +280,7 @@
 
     <div class="contact" id="con">
         <p>If you have any project contact me</p>
-        <button >Contact</button>
+        <button class="contactBtn">Contact</button>
         </div>
         <footer>
             <p>Jaydeep Shelake</p>
@@ -299,19 +300,25 @@
     
 
         <!-- form -->
-
+        <div class="form-area">
         <div class="form" id="subForm">
             <form action="#">
                 
-                <input type="text" placeholder="Enter Name">
-                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Enter Name" id="name-value">
+                <input type="text" placeholder="Enter Email" id="email">
+                <i class="fa fa-times fa-2x" id="from-cross"></i>
                 <div class="formbtn">
-                    <button type="reset">Cancel</button>
-                   <button type="submit" id="sumbmitBtn">Submit</button>
+                    <button type="reset" class="btn-from" >Reset</button>
+                   <button type="submit" id="sumbmitBtn" class="btn-from">Submit</button>
                 </div>
             </form>
         </div>
-
+    </div>
+    <div class="modal-area">
+        <div class="msg-area">
+        <p><span id="name"></span> thankyou for submiting form</p>
+        </div>
+    </div>
         <div class="code">
             <div class="slogan"><i class="fas fa-utensils"></i><div>eat<span style="color:red;">()</span>;</div></div>
             <div class="slogan"><i class="fas fa-code"></i><div>code<span style="color:yellow;">()</span>;</div></div>

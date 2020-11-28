@@ -79,3 +79,12 @@ background:rgba(84, 83, 83, 0.474);
 .body.body-color #subForm input{
     color: #fff;
 }
+@media (max-width:360px){
+    #subForm{
+        width: 96%;
+    }  
+    .formbtn{
+        width: 100%;
+        display: flex;
+    }
+}

@@ -49,9 +49,12 @@ nav ul li:hover{
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     transition: all ease 0.5s;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
-nav ul li a:hover{
+nav ul li:hover a{
     color: #FFFFFF;
     transition: all ease 0.5s;
 }
@@ -129,11 +132,17 @@ nav ul li a:hover{
 .hire-btn{
     border: 2px solid #373636;
     color: #373636;
+    
 }
 .down-cv{
     background-color: #0b0b0b;
     color: #FFFFFF;
     border: none;
+    width: 130px;
+    height: 42px;
+    font-size: 14px;
+    padding:0.73rem 0.8rem;
+    border-radius: 10px;
 }
 button:active{
     transform: scale(1.1);
@@ -1039,7 +1048,7 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
 
 @media only screen and (max-width:442px){
      .git ,.vs-code{
-         margin-left: 20px;
+         margin-left: 10px;
      }
      .react , .node , .javascript{
          height: auto;
@@ -1060,6 +1069,9 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
          margin: 7% 0;
          width: 90%;
      }
+     .git img , .vs-code img{
+        width: 75px;
+    }
 }
 
 @media only screen and (max-width:362px){
@@ -1124,6 +1136,7 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
    .project-sec .card{
        width: 90%;
    }
+   
 }
 
 

@@ -373,6 +373,8 @@ footer p:nth-child(2){
     bottom: 10px;
     transform: translateX(-50%);
     text-align: center;
+    width: 100%;
+    margin: 5px 0;
 
 }
 .social-icons i{
@@ -651,7 +653,15 @@ nav ul i{
     align-items: center;
     justify-content: center;
     margin-left: 50px;
+    padding:0 5px;
 
+}
+.git:hover , .vs-code:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    
+}
+.tools.hide .git:hover ,.tools.hide .vs-code:hover {
+    background: #131313;
 }
 .git p{
     font-family: 'Orbitron', sans-serif;
@@ -1048,6 +1058,7 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
      }
      .project-sec .card{
          margin: 7% 0;
+         width: 90%;
      }
 }
 

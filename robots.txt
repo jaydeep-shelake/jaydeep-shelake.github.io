@@ -1,0 +1,5 @@
+User-agent:*
+Allow:/
+Sitemap:https://jaydeep-shelake.github.io/
+Disallow:/html/jsproject.html
+Disallow:/html/nodeproject.html

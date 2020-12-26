@@ -150,3 +150,26 @@ label.classList.toggle('color-white')
 formCross.addEventListener('click',()=>{
   formArea.style.top="-390px";
 });
+
+const cerificateCard = document.querySelectorAll('.certiImg');
+const CertiModalArea = document.getElementById('CertiModalArea');
+cerificateCard.forEach(card=>{
+card.addEventListener('click',(e)=>{
+    CertiModalArea.classList.add('showModal')
+   const img = e.target.src;
+   const slicedImg=img.slice(26,35);
+   console.log(slicedImg);
+   const modalHTML = `<div class="cardModal">
+                <img src="${img}" alt="${img}"/>
+                <a href="certificates/${slicedImg}.pdf" class="fas fa-download fa-2x" download="jaydeepCertificate"></a>
+                </div>`;
+       CertiModalArea.innerHTML=modalHTML;         
+});
+});
+
+window.addEventListener('click',(e)=>{
+ const click= e.target;
+ if(click.classList.contains('showModal')){
+     CertiModalArea.classList.remove('showModal');
+ }
+})

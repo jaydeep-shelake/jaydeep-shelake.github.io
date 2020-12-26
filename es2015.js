@@ -60,7 +60,7 @@ function up() {
 
 var navList = document.getElementById('nav-list');
 navList.addEventListener('click', function () {
-  navList.style.top = "-27vh";
+  navList.style.top = "-35vh";
 }); // typing anmitaion
 
 var TypeWriter = function TypeWriter(txtElement, words) {
@@ -140,4 +140,25 @@ label.addEventListener('click', function () {
 
 formCross.addEventListener('click', function () {
   formArea.style.top = "-390px";
+});
+
+//certi
+
+var cerificateCard = document.querySelectorAll('.certiImg');
+var CertiModalArea = document.getElementById('CertiModalArea');
+cerificateCard.forEach(function (card) {
+  card.addEventListener('click', function (e) {
+    CertiModalArea.classList.add('showModal');
+    var img = e.target.src;
+    var slicedImg = img.slice(26, 35);
+    var modalHTML = "<div class=\"cardModal\"><img src=\"".concat(img, "\" alt=\"").concat(img, "\"/><a href=\"certificates/").concat(slicedImg, ".pdf\" class=\"fas fa-download fa-2x\" download=\"jaydeepCertificate\"></a></div>");
+    CertiModalArea.innerHTML = modalHTML;
+  });
+});
+window.addEventListener('click', function (e) {
+  var click = e.target;
+
+  if (click.classList.contains('showModal')) {
+    CertiModalArea.classList.remove('showModal');
+  }
 });

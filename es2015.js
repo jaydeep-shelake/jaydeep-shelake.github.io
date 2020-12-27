@@ -150,8 +150,9 @@ cerificateCard.forEach(function (card) {
   card.addEventListener('click', function (e) {
     CertiModalArea.classList.add('showModal');
     var img = e.target.src;
-    var slicedImg = img.slice(86, 95);
-    var modalHTML = "<div class=\"cardModal\"><img src=\"".concat(img, "\" alt=\"").concat(img, "\"/><a href=\"certificates/").concat(slicedImg, ".pdf\" class=\"fas fa-download fa-2x\" download=\"jaydeepCertificate\"></a></div>");
+    var slicedImg = e.target.dataset.certi;
+    console.log(slicedImg);
+    var modalHTML = "<div class=\"cardModal \"><img src=\"".concat(img, "\" alt=\"").concat(img, "\"/><a href=\"certificates/").concat(slicedImg, ".pdf\" class=\"fas fa-download fa-2x\" download=\"jaydeepCertificate\"></a></div>");
     CertiModalArea.innerHTML = modalHTML;
   });
 });

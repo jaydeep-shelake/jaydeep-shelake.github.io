@@ -880,6 +880,7 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
 .cardModal img{
     width: 90%;
     height:90%;
+    
 }
 .showModal{
     opacity: 1 !important;
@@ -1122,6 +1123,10 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
        margin: 10px;
        padding: 0px;
     }
+    .cardModal{
+        width: 90%;
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width:362px){
@@ -1191,6 +1196,7 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
        width: 145px;
        text-align: center;
    }
+   
 }
 
 
@@ -1244,6 +1250,7 @@ h2{
     -webkit-text-fill-color: transparent;
     
 }
+
 
 .use.hide .i-use .line, .certi.hide .head .line , .tools.hide .tool-text .line ,.project.hide .heading .line {
   background: linear-gradient(130deg ,#00ff00,#ad0da0) !important;

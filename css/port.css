@@ -898,6 +898,29 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.549);
 }
 
+.created{
+    width: 100%;
+    height: auto;
+    margin-top: -2px;
+    padding: 1rem 0;
+    background:#0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.created .terminal{
+    width: 600px;
+    border-radius: 4px;
+    height: 40px;
+    padding: 10px;
+    background: #1d1d1d;
+    /* display: flex;
+    align-items: center;
+    justify-content: start; */
+    font-size: 13px;
+}
+
+
 @media(max-width:1000px)
 {
    *{
@@ -1090,6 +1113,11 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
 .project{
     flex-direction: column;
 }
+.created .terminal{
+    width: 90%;
+    font-size: 11px;
+    height: 55px;
+  }
 
 }
 
@@ -1127,6 +1155,11 @@ box-shadow: 4px 4px 12px rgba(89, 201, 10, 0.344);
         width: 90%;
         height: 300px;
     }
+    .created .terminal{
+        height: 65px;
+        width: 95%;
+    }
+    
 }
 
 @media only screen and (max-width:362px){

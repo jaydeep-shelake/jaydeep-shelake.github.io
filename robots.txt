@@ -1,4 +1,4 @@
-User-agent:*
+User-agent:googlebot
 Allow:/
 Sitemap:https://jaydeep-shelake.github.io/
 Disallow:/html/jsproject.html

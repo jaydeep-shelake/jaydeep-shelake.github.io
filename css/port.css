@@ -457,6 +457,7 @@ footer p:nth-child(2) {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .javascript .img {
